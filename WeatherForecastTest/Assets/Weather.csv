@@ -1,0 +1,5 @@
+Latitude,Longitude,timezone,forecast_days,daily
+52.52,13.419998,Europe/London,1,temperature_2m_max
+23.3,12.200001,Europe/London,2,temperature_2m_max
+33.4375,13.4375,Europe/London,3,temperature_2m_max
+55.00375,12.33493,Europe/London,4,temperature_2m_max

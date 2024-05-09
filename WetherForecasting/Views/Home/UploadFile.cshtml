@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WetherForecasting.Entity.LocationModel>
+
+@{
+    ViewBag.Title = "UploadFile";
+}
+
+<h2>Weather Forecast</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Latitude
+        </th>
+        <th>
+            Longitude
+        </th>
+        <th>
+            Timezone
+        </th>
+        <th>
+            Date
+        </th>
+        <th>
+            Max Temperature (2m)
+        </th>
+    </tr>
+
+    @foreach (var location in Model)
+    {
+        foreach (var forecast in location.DailyForecasts)
+        {
+            <tr>
+                <td>
+                    @location.Latitude
+                </td>
+                <td>
+                    @location.Longitude
+                </td>
+                <td>
+                    @location.Timezone
+                </td>
+                <td>
+                    @forecast.Date
+                </td>
+                <td>
+                    @forecast.Temperature2mMax
+                </td>
+            </tr>
+        }
+    }
+
+</table>

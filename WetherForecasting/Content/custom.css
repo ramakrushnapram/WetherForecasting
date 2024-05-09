@@ -1,0 +1,7 @@
+﻿/* Custom styles for list group */
+.custom-list-group-item {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ddd; /* Gray border */
+    margin-bottom: 5px; /* Bottom margin between items */
+    padding: 10px; /* Padding inside each item */
+}
